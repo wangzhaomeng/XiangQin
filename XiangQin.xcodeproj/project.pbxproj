@@ -169,7 +169,6 @@
 		9D74682E2467EB6C0060EFEF /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D74682D2467EB6C0060EFEF /* FourthViewController.m */; };
 		9D7468312467EB7C0060EFEF /* FifthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7468302467EB7C0060EFEF /* FifthViewController.m */; };
 		9DEBF0392467E47B00604DB3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DEBF0382467E47B00604DB3 /* AppDelegate.m */; };
-		9DEBF03F2467E47B00604DB3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DEBF03E2467E47B00604DB3 /* ViewController.m */; };
 		9DEBF0442467E48200604DB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DEBF0432467E48200604DB3 /* Assets.xcassets */; };
 		9DEBF04A2467E48200604DB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DEBF0492467E48200604DB3 /* main.m */; };
 		9DF7FB082467E9D200475546 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DF7FB062467E9D200475546 /* LaunchScreen.storyboard */; };
@@ -504,8 +503,6 @@
 		9DEBF0342467E47B00604DB3 /* XiangQin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XiangQin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DEBF0372467E47B00604DB3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = XiangQin/AppDelegate.h; sourceTree = SOURCE_ROOT; };
 		9DEBF0382467E47B00604DB3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = XiangQin/AppDelegate.m; sourceTree = SOURCE_ROOT; };
-		9DEBF03D2467E47B00604DB3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../ViewController.h; sourceTree = "<group>"; };
-		9DEBF03E2467E47B00604DB3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../ViewController.m; sourceTree = "<group>"; };
 		9DEBF0432467E48200604DB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DEBF0482467E48200604DB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DEBF0492467E48200604DB3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../main.m; sourceTree = "<group>"; };
@@ -1857,6 +1854,37 @@
 			path = model;
 			sourceTree = "<group>";
 		};
+		64CCD264246FE4D900B13632 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				64CCD267246FE4F500B13632 /* view */,
+				64CCD266246FE4EE00B13632 /* model */,
+				64CCD265246FE4E800B13632 /* viewModel */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		64CCD265246FE4E800B13632 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		64CCD266246FE4EE00B13632 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		64CCD267246FE4F500B13632 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		9D7468212467EAA60060EFEF /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
@@ -1865,6 +1893,7 @@
 				64C009F8246FDD6100816CDD /* third */,
 				64C009FA246FDD7300816CDD /* fourth */,
 				64C009FC246FDD8C00816CDD /* fifth */,
+				64CCD264246FE4D900B13632 /* common */,
 			);
 			path = MVVM;
 			sourceTree = "<group>";
@@ -1900,8 +1929,6 @@
 			children = (
 				9DEBF0372467E47B00604DB3 /* AppDelegate.h */,
 				9DEBF0382467E47B00604DB3 /* AppDelegate.m */,
-				9DEBF03D2467E47B00604DB3 /* ViewController.h */,
-				9DEBF03E2467E47B00604DB3 /* ViewController.m */,
 				9D7468322467EE890060EFEF /* LHYPrefixHeader.pch */,
 				9DEBF0432467E48200604DB3 /* Assets.xcassets */,
 				9DF7FB062467E9D200475546 /* LaunchScreen.storyboard */,
@@ -2050,7 +2077,6 @@
 				64C00956246FD9FC00816CDD /* WZMProgressHUD.m in Sources */,
 				64C00944246FD9FB00816CDD /* WZMDownloader.m in Sources */,
 				64C00952246FD9FC00816CDD /* UIWindow+WZMTransformAnimation.m in Sources */,
-				9DEBF03F2467E47B00604DB3 /* ViewController.m in Sources */,
 				64C009E4246FDA3500816CDD /* WZMTabBarController.m in Sources */,
 				64C0096B246FD9FC00816CDD /* WZMPanGestureRecognizer.m in Sources */,
 				9DEBF0392467E47B00604DB3 /* AppDelegate.m in Sources */,
