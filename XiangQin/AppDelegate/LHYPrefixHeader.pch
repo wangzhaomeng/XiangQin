@@ -1,0 +1,18 @@
+//
+//  LHYPrefixHeader.pch
+//  XiangQin
+//
+//  Created by 富秋 on 2020/5/10.
+//  Copyright © 2020 富秋. All rights reserved.
+//
+
+#ifndef LHYPrefixHeader_pch
+#define LHYPrefixHeader_pch
+#ifdef __OBJC__
+
+#import "WZMKit.h"
+#import "WZMFeature.h"
+#define THEME_COLOR WZM_R_G_B(222, 222, 222)
+
+#endif
+#endif /* LHYPrefixHeader_pch */
