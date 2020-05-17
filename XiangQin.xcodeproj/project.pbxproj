@@ -163,6 +163,7 @@
 		64C009F1246FDA3500816CDD /* WZMRechargeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C009CC246FDA3500816CDD /* WZMRechargeModel.m */; };
 		64C009F2246FDA3500816CDD /* WZMIAPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C009D0246FDA3500816CDD /* WZMIAPManager.m */; };
 		64C009F3246FDA3500816CDD /* WZMCrashManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C009D4246FDA3500816CDD /* WZMCrashManager.m */; };
+		64CCD26B246FE81500B13632 /* LHYLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64CCD26A246FE81500B13632 /* LHYLoginViewController.m */; };
 		9D7468252467EB120060EFEF /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7468242467EB120060EFEF /* FirstViewController.m */; };
 		9D7468282467EB4E0060EFEF /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7468272467EB4E0060EFEF /* SecondViewController.m */; };
 		9D74682B2467EB5A0060EFEF /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D74682A2467EB5A0060EFEF /* ThirdViewController.m */; };
@@ -489,6 +490,8 @@
 		64C009D3246FDA3500816CDD /* WZMCrashManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZMCrashManager.h; sourceTree = "<group>"; };
 		64C009D4246FDA3500816CDD /* WZMCrashManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZMCrashManager.m; sourceTree = "<group>"; };
 		64C009D5246FDA3500816CDD /* WZMFeature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZMFeature.h; sourceTree = "<group>"; };
+		64CCD269246FE81500B13632 /* LHYLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHYLoginViewController.h; sourceTree = "<group>"; };
+		64CCD26A246FE81500B13632 /* LHYLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHYLoginViewController.m; sourceTree = "<group>"; };
 		9D7468232467EB120060EFEF /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		9D7468242467EB120060EFEF /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		9D7468262467EB4D0060EFEF /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
@@ -1860,6 +1863,7 @@
 				64CCD267246FE4F500B13632 /* view */,
 				64CCD266246FE4EE00B13632 /* model */,
 				64CCD265246FE4E800B13632 /* viewModel */,
+				64CCD268246FE77D00B13632 /* viewController */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -1883,6 +1887,15 @@
 			children = (
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		64CCD268246FE77D00B13632 /* viewController */ = {
+			isa = PBXGroup;
+			children = (
+				64CCD269246FE81500B13632 /* LHYLoginViewController.h */,
+				64CCD26A246FE81500B13632 /* LHYLoginViewController.m */,
+			);
+			path = viewController;
 			sourceTree = "<group>";
 		};
 		9D7468212467EAA60060EFEF /* MVVM */ = {
@@ -2071,6 +2084,7 @@
 				64C00922246FD9FB00816CDD /* NSString+wzmcate.m in Sources */,
 				64C0090D246FD9FB00816CDD /* UIButton+WZMReaction.m in Sources */,
 				64C00947246FD9FC00816CDD /* WZMNetWorking.m in Sources */,
+				64CCD26B246FE81500B13632 /* LHYLoginViewController.m in Sources */,
 				64C0091A246FD9FB00816CDD /* WZMPlayer.m in Sources */,
 				64C009E5246FDA3500816CDD /* WZMBaseModel.m in Sources */,
 				64C009F0246FDA3500816CDD /* WZMRechargeWebController.m in Sources */,

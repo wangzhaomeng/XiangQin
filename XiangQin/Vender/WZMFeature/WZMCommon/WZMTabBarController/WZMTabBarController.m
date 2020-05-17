@@ -15,7 +15,7 @@
 #import "FifthViewController.h"
 #import "WZMMacro.h"
 
-@interface WZMTabBarController ()
+@interface WZMTabBarController ()<UITabBarControllerDelegate>
 
 @end
 
@@ -49,6 +49,7 @@
         FifthViewController *fifViewController = [[FifthViewController alloc] init];
         WZMNavigationController *fifNav = [[WZMNavigationController alloc] initWithRootViewController:fifViewController];
         
+        tabBarController.delegate = tabBarController;
         [tabBarController setViewControllers:@[firstNav,secondNav,thirdNav,fourthNav,fifNav]];
         [tabBarController setConfig];
     });
@@ -105,6 +106,16 @@
 
 - (UIViewController *)childViewControllerForScreenEdgesDeferringSystemGestures {
     return self.selectedViewController;
+}
+
+- (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController{
+    NSInteger index = [tabBarController.viewControllers indexOfObject:viewController];
+    if (index == 4) {
+        LHYLoginViewController *loginVC = [[LHYLoginViewController alloc] init];
+        [(UINavigationController *)tabBarController.selectedViewController pushViewController:loginVC animated:YES];
+        return NO;
+    }
+    return YES;
 }
 
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= 130000
